@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Table</h1>
+        <button id="createTableButton">Create Table</button>
+        <div id="createForm" class="hidden">
+            <h2>Enter Table Details</h2>
+            <form id="tableForm">
+                <label for="tableName">Table Name:</label>
+                <input type="text" id="tableName" required><br><br>
+                <label for="columnNames">Column Names (comma-separated):</label>
+                <input type="text" id="columnNames" required><br><br>
+                <label for="dataTypes">Data Types (comma-separated):</label>
+                <input type="text" id="dataTypes" required><br><br>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+        <div id="tableList" class="hidden">
+            <h2>Tables:</h2>
+            <ul id="tableNames">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
